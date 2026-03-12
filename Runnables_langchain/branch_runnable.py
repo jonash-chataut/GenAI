@@ -40,5 +40,5 @@ branch_chain=RunnableBranch(
 
 final_chain=RunnableSequence(report_generation_chain,branch_chain)
 
-result=final_chain.invoke({'topic': 'Football'})
-print(result)
+results=final_chain.invoke({'topic': 'Football'})
+print(results)
